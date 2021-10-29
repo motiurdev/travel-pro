@@ -1,51 +1,57 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 initializeAuthentication()
 
 const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState("")
+    const [isLoading, setIsLoading] = useState(true)
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
 
     const loginWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const user = result.user;
-                setUser(user);
-            })
+        setIsLoading(true)
+        return signInWithPopup(auth, googleProvider)
             .catch(error => {
                 setError(error.message)
+            })
+            .finally(() => {
+                setIsLoading(false)
             })
     }
 
     const logOut = () => {
+        setIsLoading(true)
         signOut(auth).then(() => {
             setUser({})
         }).catch((error) => {
             // An error happened.
-        });
+        })
+            .finally(() => {
+                setIsLoading(false)
+            })
+
     }
 
     // state change
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            // User is signed in, see docs for a list of available properties
-            // https://firebase.google.com/docs/reference/js/firebase.User
-            const uid = user.uid;
-            // ...
-        } else {
-            // User is signed out
-            // ...
-        }
-    });
+    useEffect(() => {
+        setIsLoading(true)
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user)
+            }
+            setIsLoading(false)
+        });
+    }, [])
 
     return {
         user,
         error,
         loginWithGoogle,
-        logOut
+        logOut,
+        isLoading
+
     }
 }
 

@@ -15,3 +15,18 @@ Nav a {
     font-weight: 500;
     color: #329f5b;
 }
+
+.login-btn {
+    border: none;
+    background: #329f5b;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 25px !important;
+}
+
+.profile-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
