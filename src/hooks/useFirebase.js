@@ -12,7 +12,11 @@ const useFirebase = () => {
 
     const loginWithGoogle = () => {
         setIsLoading(true)
-        return signInWithPopup(auth, googleProvider)
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const user = result.user;
+                setUser(user);
+            })
             .catch(error => {
                 setError(error.message)
             })
