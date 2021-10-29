@@ -1,0 +1,17 @@
+.loginGoogle {
+    background: transparent;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 8px;
+}
+
+.loginGoogle i {
+    color: #DB4437;
+}
+
+.login-form {
+    height: 100vh;
+}

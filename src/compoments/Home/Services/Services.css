@@ -1,0 +1,21 @@
+.service-img {
+    height: 300px;
+}
+
+.header-title{
+    color: #329f5b;
+}
+
+.regular-btn {
+    border: none;
+    padding: 8px 20px;
+    background: #329f5b;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.regular-btn:hover {
+    color: #fff;
+    background: #1d5c35;
+}

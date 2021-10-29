@@ -14,6 +14,7 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <NavLink to="/home">Home</NavLink>
                             <NavLink to="/about">About</NavLink>
+                            <NavLink to="/login">Login</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

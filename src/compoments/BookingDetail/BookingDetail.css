@@ -1,0 +1,22 @@
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.order-form form input {
+    padding: 6px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.order-form form input[type=submit] {
+    background: #329f5b;
+    color: #fff;
+    width: 150px;
+    border: none;
+    font-size: 17px;
+    padding: 8px 30px;
+    border-radius: 5px;
+}

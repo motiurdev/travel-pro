@@ -7,9 +7,11 @@
 }
 
 .banner-btn {
-    background:#477cee;
+    background:#0387a8;
     border: none;
     padding: 10px 28px;
+    font-size: 18px;
+    margin-top: 20px;
     color: #fff;
     font-weight: 500;
     border-radius: 10px

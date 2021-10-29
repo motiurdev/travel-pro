@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Kuala Lumpur",
+        "des": "Kuala Lumpur is the capital of Malaysia. Its modern skyline is dominated by the 451m-tall Petronas Twin Towers, a pair of glass-and-steel-clad skyscrapers with Islamic motifs. The towers also offer a public skybridge and observation deck. The city is also home to British colonial-era landmarks such as the Kuala Lumpur Railway Station and the Sultan Abdul Samad Building.",
+        "package": "50",
+        "img": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/city/B2PoqufvAdhLzmrVW9m8mWiIu4xtekZ5.jpg",
+        "price": 2000
+    },
+    {
+        "name": "Langkawi",
+        "des": "Langkawi, officially known as Langkawi, the Jewel of Kedah, is a district and an archipelago of 99 islands in the Malacca Strait. some 30 km off the coast of northwestern Malaysia. The islands are a part of the state of Kedah, which is adjacent to the Thai border; the islands are a few kilometres south of Ko Tarutao.",
+        "package": "18",
+        "img": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/city/medium/CVuBGQuT4wGBE9wuxLMzKH-TScxH0BBa.jpg",
+        "price": 4000
+    },
+    {
+        "name": "Bangkok",
+        "des": "Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple.",
+        "package": "60",
+        "img": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/city/a5XNEs3XKvGJ_AT6W4zXQuxYbymKDlHi.jpeg",
+        "price": 5000
+    },
+    {
+        "name": "Singapore",
+        "des": "Travellers seeking to enter Singapore will do so via a Safe Travel Lane arrangement, and the entry requirements and health controls of each Safe Travel Lane may differ depending on the traveller’s profile and travel history.",
+        "package": "30",
+        "img": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/city/medium/XLqJd3dnaBBujjQolcabpxTZqEjVZYkr.jpg",
+        "price": 3000
+    },
+    {
+        "name": "Agra",
+        "des": "Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, about 210 kilometres south of the national capital New Delhi and 335km west of the state capital Lucknow.",
+        "package": "15",
+        "img": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/city/medium/gcvFNHJEcD9ZI5qrELKspltkxOyalQlG.jpg",
+        "price": 6000
+    },
+    {
+        "name": "Bali",
+        "des": "Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan.",
+        "package": "38",
+        "img": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/city/medium/r4JcWEpRruPBfytCO4Dc_G2HYSDlIy1g.jpg",
+        "price": 4000
+    }
+]
