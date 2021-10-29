@@ -1,0 +1,17 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+Nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #329f5b;
+}

@@ -1,0 +1,16 @@
+.banner {
+    background-image:     linear-gradient(to bottom, rgba(14, 177, 199, 0.397), rgba(46, 204, 113, 1)),
+    url('../../../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner-btn {
+    background:#477cee;
+    border: none;
+    padding: 10px 28px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px
+}
