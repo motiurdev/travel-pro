@@ -8,7 +8,7 @@ const AddBooking = () => {
     const { user } = useAuth()
     const onSubmit = data => {
         data.email = user?.email;
-        fetch(`http://localhost:5000/addOrder`, {
+        fetch(`https://mighty-thicket-11693.herokuapp.com/addOrder`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

@@ -12,7 +12,7 @@ const BookingDetail = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/bookingDetail/${id}`)
+        fetch(`https://mighty-thicket-11693.herokuapp.com/bookingDetail/${id}`)
             .then(res => res.json())
             .then(data => setSingleBooking(data))
     }, [])
@@ -21,7 +21,7 @@ const BookingDetail = () => {
         data.singleBooking = singleBooking;
         data.status = "pending"
 
-        fetch(`http://localhost:5000/placeOrder`, {
+        fetch(`https://mighty-thicket-11693.herokuapp.com/placeOrder`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

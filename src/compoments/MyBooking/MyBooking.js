@@ -7,7 +7,7 @@ const MyBooking = () => {
 
     // my order data load
     useEffect(() => {
-        fetch(`http://localhost:5000/myorder/${user?.email}`)
+        fetch(`https://mighty-thicket-11693.herokuapp.com/myorder/${user?.email}`)
             .then(res => res.json())
             .then(data => setMyBookings(data))
     }, [user.email, myBookings])
@@ -16,7 +16,7 @@ const MyBooking = () => {
     const handleDeleteOrder = (deleteId) => {
         const confirm = window.confirm("Are you sure. You want to delete this?")
         if (confirm) {
-            fetch(`http://localhost:5000/deleteOrder/${deleteId}`, {
+            fetch(`https://mighty-thicket-11693.herokuapp.com/deleteOrder/${deleteId}`, {
                 method: "DELETE",
                 headers: { 'Content-Type': 'application/json' },
             })

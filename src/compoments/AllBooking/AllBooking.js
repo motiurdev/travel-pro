@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const AllBooking = () => {
     const [allBookings, setAllBookings] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/allBooking`)
+        fetch(`https://mighty-thicket-11693.herokuapp.com/allBooking`)
             .then(res => res.json())
             .then(data => {
                 setAllBookings(data)
@@ -14,7 +14,7 @@ const AllBooking = () => {
     const handleDeleteOrder = (deleteId) => {
         const confirm = window.confirm("Are you sure. You want to delete this?")
         if (confirm) {
-            fetch(`http://localhost:5000/deleteOrder/${deleteId}`, {
+            fetch(`https://mighty-thicket-11693.herokuapp.com/deleteOrder/${deleteId}`, {
                 method: "DELETE",
                 headers: { 'Content-Type': 'application/json' },
             })
@@ -32,7 +32,7 @@ const AllBooking = () => {
     // update status
     const handlePendingOrder = (id, index) => {
         const updateData = allBookings[index]
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://mighty-thicket-11693.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updateData)
