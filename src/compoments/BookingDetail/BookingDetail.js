@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
 import './BookingDetail.css'
+import useAuth from '../../hooks/useAuth';
 
 
 const BookingDetail = () => {
     const [singleBooking, setSingleBooking] = useState({})
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-
+    const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
+    const { user } = useAuth()
     const { id } = useParams()
+
     useEffect(() => {
         fetch(`http://localhost:5000/bookingDetail/${id}`)
             .then(res => res.json())
@@ -16,7 +18,21 @@ const BookingDetail = () => {
     }, [])
 
     const onSubmit = data => {
-        console.log(data)
+        data.singleBooking = singleBooking;
+        data.status = "pending"
+
+        fetch(`http://localhost:5000/placeOrder`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert("Booking Successful")
+                    reset()
+                }
+            })
     };
 
     return (
@@ -33,8 +49,8 @@ const BookingDetail = () => {
                 <div className="col-md-6 order-form">
                     <h2 className="text-center header-title py-3">Order Place</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <input defaultValue="Your Name" {...register("name")} />
-                        <input defaultValue="Your Email" {...register("email", { required: true })} />
+                        <input defaultValue={user.displayName} {...register("name")} />
+                        <input defaultValue={user.email} {...register("email", { required: true })} />
                         <input placeholder="Phone" {...register("phone")} />
                         <input placeholder="Address" {...register("address")} />
                         <input defaultValue={new Date()} {...register("date")} />

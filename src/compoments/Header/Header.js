@@ -15,7 +15,14 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <NavLink to="/home">Home</NavLink>
-                            <NavLink to="/about">About</NavLink>
+                            {
+                                user?.email &&
+                                <span className="pt-3">
+                                    <NavLink to="/mybooking">My Booking</NavLink>
+                                    <NavLink to="/allbooking">All Booking</NavLink>
+                                    <NavLink to="/addbooking">Add Booking</NavLink>
+                                </span>
+                            }
                             {
                                 user?.email && <span className="me-2 mt-3">
                                     <img src={user?.photoURL} className="profile-img" alt="" />

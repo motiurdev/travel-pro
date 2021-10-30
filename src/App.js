@@ -7,6 +7,9 @@ import BookingDetail from './compoments/BookingDetail/BookingDetail';
 import Login from './compoments/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './compoments/PrivateRoute/PrivateRoute';
+import MyBooking from './compoments/MyBooking/MyBooking';
+import AllBooking from './compoments/AllBooking/AllBooking';
+import AddBooking from './compoments/AddBooking/AddBooking';
 
 function App() {
   return (
@@ -19,6 +22,15 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Home></Home>
+          </Route>
+          <Route exact path="/mybooking">
+            <MyBooking></MyBooking>
+          </Route>
+          <Route exact path="/allbooking">
+            <AllBooking></AllBooking>
+          </Route>
+          <Route exact path="/addbooking">
+            <AddBooking></AddBooking>
           </Route>
           <PrivateRoute exact path="/bookingDetail/:id">
             <BookingDetail></BookingDetail>
