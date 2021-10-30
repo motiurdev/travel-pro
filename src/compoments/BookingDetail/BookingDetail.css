@@ -5,9 +5,10 @@
     margin: auto;
 }
 
-.order-form form input {
+.order-form form input, textarea {
     padding: 6px;
     margin-bottom: 30px;
+    border-radius: 6px;
     border: 1px solid rgb(190, 190, 190);
 }
 

@@ -1,0 +1,11 @@
+.addForm form{
+    width: 40%;
+}
+
+.addForm form input {
+    border-radius: 7px;
+}
+
+.addForm form textarea {
+    margin-bottom: 30px;
+}
