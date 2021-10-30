@@ -22,8 +22,10 @@ const MyBooking = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    const remainder = myBookings.filter(myBooking => myBooking._id !== deleteId)
-                    setMyBookings(remainder)
+                    if (data.deletedCount > 0) {
+                        const remainder = myBookings.filter(myBooking => myBooking._id !== deleteId)
+                        setMyBookings(remainder)
+                    }
                 })
         }
     }
@@ -45,6 +47,7 @@ const MyBooking = () => {
                                         <h5 className="card-title">{myBooking?.singleBooking.name}</h5>
                                         <p className="card-text">{myBooking?.singleBooking.des.slice(0, 80)}</p>
                                         <button onClick={() => handleDeleteOrder(myBooking._id)} className="regular-btn">Cancel</button>
+                                        <button className="regular-btn ms-2">{myBooking.status}</button>
                                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                 </div>
