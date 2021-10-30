@@ -25,6 +25,7 @@ const Login = () => {
                 setIsLoading(false)
             })
     }
+    window.scrollTo(0, 0)
     return (
         <div>
             <div className="d-flex justify-content-center align-items-center login-form">
