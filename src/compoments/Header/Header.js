@@ -26,7 +26,7 @@ const Header = () => {
                             {
                                 user?.email && <span className="me-2 mt-3">
                                     <img src={user?.photoURL} className="profile-img" alt="" />
-                                    {user.displayName}
+                                    {user.displayName.slice(0, 13)}
                                 </span>
                             }
                             {

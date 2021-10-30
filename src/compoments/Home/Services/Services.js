@@ -32,8 +32,8 @@ const Services = () => {
                                         <div className="card h-100">
                                             <img src={service.img} className="card-img-top service-img" alt="..." />
                                             <div className="card-body">
-                                                <h5 className="card-title">{service.name}</h5>
-                                                <p className="card-text">{service?.des.slice(0, 100)}</p>
+                                                <h5 className="card-title header-title">{service.name}</h5>
+                                                <p className="card-text text-muted">{service?.des.slice(0, 100)}</p>
                                                 <h5 className="mb-4">${service.price}</h5>
                                                 <Link to={`/bookingDetail/${service._id}`} className="regular-btn">Booking now <i className="fas fa-arrow-circle-right"></i></Link>
                                             </div>

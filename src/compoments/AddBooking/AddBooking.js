@@ -22,7 +22,7 @@ const AddBooking = () => {
             })
     };
     return (
-        <div className="container">
+        <div className="container mb-5">
             <h1 className="header-title text-center py-5">Add Booking</h1>
             <div className="order-form addForm">
                 <form onSubmit={handleSubmit(onSubmit)}>

@@ -10,6 +10,7 @@ import PrivateRoute from './compoments/PrivateRoute/PrivateRoute';
 import MyBooking from './compoments/MyBooking/MyBooking';
 import AllBooking from './compoments/AllBooking/AllBooking';
 import AddBooking from './compoments/AddBooking/AddBooking';
+import Footer from './compoments/Footer/Footer';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );
