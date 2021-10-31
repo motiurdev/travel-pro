@@ -48,7 +48,7 @@ const BookingDetail = () => {
                     <h5>Price: ${singleBooking.price}</h5>
                 </div>
                 <div className="col-md-6 order-form">
-                    <h2 className="text-center header-title py-3">Order Place</h2>
+                    <h2 className="text-center header-title py-3">Booking Place</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input defaultValue={user.displayName} {...register("name")} />
                         <input defaultValue={user.email} {...register("email", { required: true })} />
