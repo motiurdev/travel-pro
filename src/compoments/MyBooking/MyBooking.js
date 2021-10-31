@@ -49,9 +49,9 @@ const MyBooking = () => {
                                         <p className="card-text">{myBooking?.singleBooking.des.slice(0, 80)}</p>
                                         {/* booking delete button */}
                                         <h5 className="mb-3 text-muted">Price: ${myBooking?.singleBooking.price}</h5>
-                                        <button onClick={() => handleDeleteOrder(myBooking._id)} className="regular-btn"><i class="fas fa-trash-alt"></i> Cancel</button>
+                                        <button onClick={() => handleDeleteOrder(myBooking._id)} className="regular-btn mb-2 ms-2"><i className="fas fa-trash-alt"></i> Cancel</button>
                                         {/* show status button */}
-                                        <button className="regular-btn ms-2"><i class="fas fa-tags"></i> {myBooking.status}</button>
+                                        <button className="regular-btn ms-2"><i className="fas fa-tags"></i> {myBooking.status}</button>
                                     </div>
                                 </div>
                             </div>
