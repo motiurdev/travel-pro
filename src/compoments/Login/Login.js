@@ -28,7 +28,7 @@ const Login = () => {
     return (
         <div>
             <div className="d-flex justify-content-center align-items-center login-form">
-                <div className="border h-50 d-flex align-items-center px-3">
+                <div className="border h-50 d-flex align-items-center px-3 rounded">
                     <div>
                         <h3 className="text-center mb-4 header-title">Login With</h3>
                         <div>
