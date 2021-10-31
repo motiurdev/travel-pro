@@ -32,7 +32,7 @@ const Header = () => {
                                 </span>
                             }
                             {
-                                user?.email ? <button className="login-btn my-2" onClick={logOut}>Logout <i class="fas fa-sign-out-alt"></i></button> : <NavLink to="/login">Login</NavLink>
+                                user?.email ? <button className="login-btn my-2" onClick={logOut}>Logout <i className="fas fa-sign-out-alt"></i></button> : <NavLink to="/login">Login</NavLink>
                             }
                         </Nav>
                     </Navbar.Collapse>
