@@ -56,7 +56,7 @@ const BookingDetail = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input defaultValue={user.displayName} {...register("name")} />
                         <input defaultValue={user.email} {...register("email", { required: true })} />
-                        <input placeholder="Phone" {...register("phone")} />
+                        <input placeholder="Phone" {...register("phone", { required: true })} />
                         <input placeholder="Address" {...register("address")} />
                         <input defaultValue={new Date()} {...register("date")} />
                         {errors.exampleRequired && <span>This field is required</span>}
