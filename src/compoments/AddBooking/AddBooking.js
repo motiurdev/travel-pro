@@ -6,6 +6,8 @@ import './AddBooking.css'
 const AddBooking = () => {
     const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
     const { user } = useAuth()
+
+    // add booking data in server
     const onSubmit = data => {
         data.email = user?.email;
         fetch(`https://mighty-thicket-11693.herokuapp.com/addOrder`, {
@@ -25,11 +27,12 @@ const AddBooking = () => {
         <div className="container mb-5">
             <h1 className="header-title text-center py-5">Add Booking</h1>
             <div className="order-form addForm">
+                {/* add booking form */}
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input placeholder="Name" {...register("name")} />
+                    <input placeholder="Name" {...register("name", { required: true })} />
                     <input placeholder="Price" {...register("price", { required: true })} />
-                    <textarea placeholder="Description" {...register("des")} />
-                    <input placeholder="Image Url" {...register("img")} />
+                    <textarea placeholder="Description" {...register("des", { required: true })} />
+                    <input placeholder="Image Url" {...register("img", { required: true })} />
                     {errors.exampleRequired && <span>This field is required</span>}
                     <input type="submit" value="Place Order" />
                 </form>

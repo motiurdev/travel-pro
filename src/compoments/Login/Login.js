@@ -26,11 +26,11 @@ const Login = () => {
     }
     window.scrollTo(0, 0)
     return (
-        <div>
+        <div className="login-container">
             <div className="d-flex justify-content-center align-items-center login-form">
-                <div className="border h-50 d-flex align-items-center px-3 rounded">
+                <div className="h-50 d-flex align-items-center px-3 rounded shadow bg-white">
                     <div>
-                        <h3 className="text-center mb-4 header-title">Login With</h3>
+                        <h2 className="text-center mb-5 header-title">Login With</h2>
                         <div>
                             <button onClick={handleGoogleLogin} className="loginGoogle"><i class="fab fa-google-plus-g fa-2x"></i> <span className="ms-2">Contine with Google</span></button>
                         </div>

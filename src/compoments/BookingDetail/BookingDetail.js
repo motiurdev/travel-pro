@@ -11,12 +11,14 @@ const BookingDetail = () => {
     const { user } = useAuth()
     const { id } = useParams()
 
+    // fetch single Booking data
     useEffect(() => {
         fetch(`https://mighty-thicket-11693.herokuapp.com/bookingDetail/${id}`)
             .then(res => res.json())
             .then(data => setSingleBooking(data))
     }, [])
 
+    // submit booking data
     const onSubmit = data => {
         data.singleBooking = singleBooking;
         data.status = "pending"
@@ -39,6 +41,7 @@ const BookingDetail = () => {
     return (
         <div className="container">
             <div className="row my-5">
+                {/* single Booking data */}
                 <div className="col-md-6">
                     <div>
                         <img src={singleBooking.img} alt="" className="img-fluid rounded" />
@@ -48,6 +51,7 @@ const BookingDetail = () => {
                     <h5>Price: ${singleBooking.price}</h5>
                 </div>
                 <div className="col-md-6 order-form">
+                    {/* Booking Place */}
                     <h2 className="text-center header-title py-3">Booking Place</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input defaultValue={user.displayName} {...register("name")} />

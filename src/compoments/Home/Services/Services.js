@@ -7,6 +7,7 @@ const Services = () => {
     const [services, setServices] = useState([])
     const [isLoading, setIsLading] = useState(true)
 
+    // fetch services data
     useEffect(() => {
         setIsLading(true)
         fetch("https://mighty-thicket-11693.herokuapp.com/allServices")
@@ -26,6 +27,7 @@ const Services = () => {
                     (<div className="container">
                         <h1 className="text-center py-5 header-title">Our Services</h1>
                         <div className="row row-cols-1 row-cols-md-3 g-4">
+                            {/* show services in ui */}
                             {
                                 services.map(service => (
                                     <div className="col" key={service._id}>
@@ -35,6 +37,7 @@ const Services = () => {
                                                 <h5 className="card-title header-title">{service.name}</h5>
                                                 <p className="card-text text-muted">{service?.des.slice(0, 100)}</p>
                                                 <h5 className="mb-4">${service.price}</h5>
+                                                {/* Booking button */}
                                                 <Link to={`/bookingDetail/${service._id}`} className="regular-btn">Booking now <i className="fas fa-arrow-circle-right"></i></Link>
                                             </div>
                                         </div>

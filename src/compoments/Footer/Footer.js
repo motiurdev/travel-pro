@@ -14,6 +14,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 mb-2">
+                        {/* logo */}
                         <h1 className="header-title">Travel Pro</h1>
                         <p className="me-2" style={{ color: "#bbbbbb" }}>You have chosen the right platform to make it happen. Dream World Travel is one of the leading travel agents in the UK. It has one of the biggest online travel portal, where you can not only search the most suitable flights for your travel destination but also avail other traveling solutions.</p>
                         <div className="social-icon">
@@ -26,6 +27,7 @@ const Footer = () => {
                     <div className="col-md-2"></div>
                     <div className="col-md-3">
                         <h4 className="mb-4">Booking</h4>
+                        {/* show services */}
                         <div className=" d-flex flex-column bd-highlight mb-3">
                             {
                                 services.map(service => (
@@ -44,6 +46,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-md-3">
+                        {/* contact info */}
                         <h4 className="mb-4">Contact</h4>
                         <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
                         <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>

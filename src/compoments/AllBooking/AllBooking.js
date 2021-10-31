@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 const AllBooking = () => {
     const [allBookings, setAllBookings] = useState([])
+
+    // fetch all booking
     useEffect(() => {
         fetch(`https://mighty-thicket-11693.herokuapp.com/allBooking`)
             .then(res => res.json())
@@ -45,6 +47,7 @@ const AllBooking = () => {
         <div className="container mb-5">
             <h1 className="text-center py-5 header-title">Manage All Booking {allBookings.length}</h1>
             <div className="row row-cols-1 row-cols-md-2 g-4 mx-auto">
+                {/* show all booking */}
                 {
                     allBookings.map((allBooking, index) => (
                         <div
@@ -58,9 +61,10 @@ const AllBooking = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">{allBooking?.singleBooking.name}</h5>
                                         <p className="card-text">{allBooking?.singleBooking.des.slice(0, 80)}</p>
-                                        <button onClick={() => handleDeleteOrder(allBooking._id)} className="regular-btn">Cancel</button>
-
-                                        <button onClick={() => handlePendingOrder(allBooking._id, index)} className="regular-btn ms-2">{allBooking.status}</button>
+                                        {/* service delete button */}
+                                        <button onClick={() => handleDeleteOrder(allBooking._id)} className="regular-btn"><i class="fas fa-trash-alt"></i> Cancel</button>
+                                        {/* status update button */}
+                                        <button onClick={() => handlePendingOrder(allBooking._id, index)} className="regular-btn ms-2"><i class="fas fa-tags"></i> {allBooking.status}</button>
                                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                 </div>
