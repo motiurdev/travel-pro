@@ -17,20 +17,20 @@ const Header = () => {
                             <NavLink to="/home">Home</NavLink>
                             {
                                 user?.email &&
-                                <span className="pt-3">
+                                <span className="d-flex flex-column flex-md-row">
                                     <NavLink to="/mybooking">My Booking</NavLink>
                                     <NavLink to="/allbooking">All Booking</NavLink>
                                     <NavLink to="/addbooking">Add Booking</NavLink>
                                 </span>
                             }
                             {
-                                user?.email && <span className="me-2 mt-3">
+                                user?.email && <span className="align-items-center d-flex me-2">
                                     <img src={user?.photoURL} className="profile-img" alt="" />
                                     {user.displayName.slice(0, 13)}
                                 </span>
                             }
                             {
-                                user?.email ? <button className="login-btn" onClick={logOut}>Logout</button> : <NavLink to="/login">Login</NavLink>
+                                user?.email ? <button className="login-btn my-2" onClick={logOut}>Logout</button> : <NavLink to="/login">Login</NavLink>
                             }
                         </Nav>
                     </Navbar.Collapse>

@@ -13,9 +13,9 @@ const Footer = () => {
         <div className="footer pt-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-2">
                         <h1 className="header-title">Travel Pro</h1>
-                        <p className="me-2">You have chosen the right platform to make it happen. Dream World Travel is one of the leading travel agents in the UK. It has one of the biggest online travel portal, where you can not only search the most suitable flights for your travel destination but also avail other traveling solutions.</p>
+                        <p className="me-2" style={{ color: "#bbbbbb" }}>You have chosen the right platform to make it happen. Dream World Travel is one of the leading travel agents in the UK. It has one of the biggest online travel portal, where you can not only search the most suitable flights for your travel destination but also avail other traveling solutions.</p>
                         <div className="social-icon">
                             <i className="fab fa-facebook-f"></i>
                             <i className="fab fa-twitter"></i>
@@ -45,9 +45,9 @@ const Footer = () => {
 
                     <div className="col-md-3">
                         <h4 className="mb-4">Contact</h4>
-                        <p className="py-2"><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
-                        <p className="py-2"><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>
-                        <p className="py-2"><i className="fas fa-envelope header-title fs-5 me-2"></i> info@travelpro.com</p>
+                        <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
+                        <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>
+                        <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-envelope header-title fs-5 me-2"></i> info@travelpro.com</p>
                     </div>
                 </div>
             </div>

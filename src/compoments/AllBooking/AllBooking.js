@@ -43,7 +43,7 @@ const AllBooking = () => {
 
     return (
         <div className="container mb-5">
-            <h1 className="text-center py-5">Manage All Booking {allBookings.length}</h1>
+            <h1 className="text-center py-5 header-title">Manage All Booking {allBookings.length}</h1>
             <div className="row row-cols-1 row-cols-md-2 g-4 mx-auto">
                 {
                     allBookings.map((allBooking, index) => (
