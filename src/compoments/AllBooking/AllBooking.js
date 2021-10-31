@@ -61,11 +61,11 @@ const AllBooking = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">{allBooking?.singleBooking.name}</h5>
                                         <p className="card-text">{allBooking?.singleBooking.des.slice(0, 80)}</p>
+                                        <h5 className="mb-3 text-muted">Price: ${allBooking?.singleBooking.price}</h5>
                                         {/* service delete button */}
                                         <button onClick={() => handleDeleteOrder(allBooking._id)} className="regular-btn"><i class="fas fa-trash-alt"></i> Cancel</button>
                                         {/* status update button */}
-                                        <button onClick={() => handlePendingOrder(allBooking._id, index)} className="regular-btn ms-2"><i class="fas fa-tags"></i> {allBooking.status}</button>
-                                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                                        <button onClick={() => handlePendingOrder(allBooking._id, index)} className="regular-btn ms-3"><i class="fas fa-tags"></i> {allBooking.status}</button>
                                     </div>
                                 </div>
                             </div>

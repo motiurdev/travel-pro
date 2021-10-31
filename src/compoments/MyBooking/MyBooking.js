@@ -48,10 +48,10 @@ const MyBooking = () => {
                                         <h5 className="card-title">{myBooking?.singleBooking.name}</h5>
                                         <p className="card-text">{myBooking?.singleBooking.des.slice(0, 80)}</p>
                                         {/* booking delete button */}
+                                        <h5 className="mb-3 text-muted">Price: ${myBooking?.singleBooking.price}</h5>
                                         <button onClick={() => handleDeleteOrder(myBooking._id)} className="regular-btn"><i class="fas fa-trash-alt"></i> Cancel</button>
                                         {/* show status button */}
                                         <button className="regular-btn ms-2"><i class="fas fa-tags"></i> {myBooking.status}</button>
-                                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                 </div>
                             </div>
