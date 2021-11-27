@@ -10,12 +10,11 @@ link: https://travel-agency-f0676.web.app/
   
 ## Website Features 
 
-- #### User can login & logout authentication?
-- #### User can booking any services?
-- #### User can Booking place?
-- #### User can see his/her booking place?
-- #### Admin can change status booking to approved and cancel any booking?
-- #### Admin can add service if he/she want?
+- #### Implement a login system
+- #### Users need to be login before booking any services
+- #### User can see his/her booking also see all users booking
+- #### Users can add new bookings and new bookings shown on the home page
+- #### Users can change booking status and cancel any booking
 
 
 ## Authors
