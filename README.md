@@ -17,6 +17,12 @@ link: https://travel-agency-f0676.web.app/
 - #### Users can change booking status and cancel any booking
 
 
+## Technologies Used
+```
+React js, Node js, React Router, Bootstrap, MongoDB, Express.js, Private
+Route, Firebase Authentication.
+```
+
 ## Authors
 
 - [@motiurrahmanmisu](https://github.com/motiurdev)
