@@ -17,6 +17,7 @@ const Header = () => {
                         {/* navbar */}
                         <Nav className="ms-auto">
                             <NavLink to="/home">Home</NavLink>
+                            <NavLink to="/about">About</NavLink>
                             {
                                 user?.email &&
                                 <span className="d-flex flex-column flex-md-row">

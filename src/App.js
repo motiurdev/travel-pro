@@ -11,6 +11,7 @@ import MyBooking from './compoments/MyBooking/MyBooking';
 import AllBooking from './compoments/AllBooking/AllBooking';
 import AddBooking from './compoments/AddBooking/AddBooking';
 import Footer from './compoments/Footer/Footer';
+import About from './compoments/Home/About/About';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path="/mybooking">
             <MyBooking></MyBooking>
+          </Route>
+          <Route path="/about">
+            <About></About>
           </Route>
           <Route exact path="/allbooking">
             <AllBooking></AllBooking>
