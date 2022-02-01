@@ -3,13 +3,27 @@
 }
 
 .header-title{
-    color: #329f5b;
+    color: #014152;
+}
+
+.places-effect{
+    position: relative;
+}
+
+.places-effect::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    left: 0;
+    bottom: -8px;
+    background-color: royalblue;
 }
 
 .regular-btn {
     border: none;
     padding: 8px 20px;
-    background: #329f5b;
+    background: #014152;
     text-decoration: none;
     color: #fff;
     transition: 0.5s;
@@ -19,4 +33,23 @@
 .regular-btn:hover {
     color: #fff;
     background: #226d3f;
+}
+
+.services-btn {
+    background:#014152;
+    border: none;
+    text-decoration: none;
+    padding: 10px 28px;
+    font-size: 18px;
+    margin-top: 12px;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.services-btn:hover {
+    color: #fff;
+    transform: scale(1.1);
+    background: #014152;
 }

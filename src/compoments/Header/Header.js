@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Header.css'
+import logoImage from '../../images/logo.png'
 
 const Header = () => {
     const { user, logOut } = useAuth()
@@ -11,7 +12,9 @@ const Header = () => {
             <Navbar collapseOnSelect bg="light" expand="lg" sticky="top" variant="light">
                 <Container>
                     {/* logo */}
-                    <Navbar.Brand className="logo"><NavLink to="/home" className="fw-bold">Travel Pro</NavLink></Navbar.Brand>
+                    <Navbar.Brand className="logo"><NavLink to="/home" className="fw-bold">
+                        <img src={logoImage} width="100" alt="" />
+                    </NavLink></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         {/* navbar */}
