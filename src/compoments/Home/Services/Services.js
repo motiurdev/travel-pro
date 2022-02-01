@@ -43,7 +43,7 @@ const Services = () => {
 
 
     return (
-        <div className='py-5'>
+        <div className='py-5 mt-4'>
             {
                 isLoading ? (<Spinner animation="border" variant="success" className="d-block mx-auto mt-5" />) :
                     (<div className="container">
