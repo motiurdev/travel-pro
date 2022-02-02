@@ -4,12 +4,16 @@
 }
 
 .social-icon i {
-    background: #2C2E33;
+    background: #014152;
     cursor: pointer;
     color: #fff;
     padding: 10px;
     border-radius: 50%;
     margin: 10px;
+}
+
+.social-icon i:hover{
+    background: #003644;
 }
 
 .copyright {

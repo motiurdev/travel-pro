@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import footerImage from '../../images/logo.png'
 import './Footer.css'
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-4 mb-2">
                         {/* logo */}
-                        <h1 className="header-title">Travel Pro</h1>
+                        <img src={footerImage} width="150" alt="" />
                         <p className="me-2" style={{ color: "#bbbbbb" }}>You have chosen the right platform to make it happen. Dream World Travel is one of the leading travel agents in the UK. It has one of the biggest online travel portal, where you can not only search the most suitable flights for your travel destination but also avail other traveling solutions.</p>
                         <div className="social-icon">
                             <i className="fab fa-facebook-f"></i>
