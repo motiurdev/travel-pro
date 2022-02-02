@@ -49,9 +49,9 @@ const Footer = () => {
                     <div className="col-md-3">
                         {/* contact info */}
                         <h4 className="mb-4">Contact</h4>
-                        <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
-                        <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>
-                        <p className="py-2" style={{ color: "#bbbbbb" }}><i className="fas fa-envelope header-title fs-5 me-2"></i> info@travelpro.com</p>
+                        <p className="py-2" style={{ color: "#014152" }}><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
+                        <p className="py-2" style={{ color: "#014152" }}><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>
+                        <p className="py-2" style={{ color: "#014152" }}><i className="fas fa-envelope header-title fs-5 me-2"></i> info@travelpro.com</p>
                     </div>
                 </div>
             </div>
