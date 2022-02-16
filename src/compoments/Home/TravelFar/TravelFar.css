@@ -1,0 +1,15 @@
+.travelFar{
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.61)),url("../../../images/travel-far.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.travelFar-container{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 8px;
+}

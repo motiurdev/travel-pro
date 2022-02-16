@@ -16,6 +16,7 @@ const Login = () => {
                 const user = result.user;
                 setUser(user);
                 history.push(redirect_uri)
+                alert("login Successful")
             })
             .catch(error => {
                 setError(error.message)

@@ -19,10 +19,10 @@ const Footer = () => {
                         <img src={footerImage} width="150" alt="" />
                         <p className="me-2" style={{ color: "#bbbbbb" }}>You have chosen the right platform to make it happen. Dream World Travel is one of the leading travel agents in the UK. It has one of the biggest online travel portal, where you can not only search the most suitable flights for your travel destination but also avail other traveling solutions.</p>
                         <div className="social-icon">
-                            <i className="fab fa-facebook-f"></i>
-                            <i className="fab fa-twitter"></i>
-                            <i className="fab fa-linkedin-in"></i>
-                            <i className="fab fa-google-plus-g"></i>
+                            <a href="#"> <i className="fab fa-facebook-f"></i></a>
+                            <a href="#">   <i className="fab fa-twitter"></i></a>
+                            <a href="#">     <i className="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i className="fab fa-google-plus-g"></i></a>
                         </div>
                     </div>
                     <div className="col-md-2"></div>
@@ -49,9 +49,9 @@ const Footer = () => {
                     <div className="col-md-3">
                         {/* contact info */}
                         <h4 className="mb-4">Contact</h4>
-                        <p className="py-2" style={{ color: "#014152" }}><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
-                        <p className="py-2" style={{ color: "#014152" }}><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>
-                        <p className="py-2" style={{ color: "#014152" }}><i className="fas fa-envelope header-title fs-5 me-2"></i> info@travelpro.com</p>
+                        <p className="py-2" style={{ color: "#007291" }}><i className="fas fa-map-marker-alt header-title fs-5 me-2"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</p>
+                        <p className="py-2" style={{ color: "#007291" }}><i className="fas fa-phone-alt header-title fs-5 me-2"></i> +2(305) 587-3407</p>
+                        <p className="py-2" style={{ color: "#007291" }}><i className="fas fa-envelope header-title fs-5 me-2"></i> info@travelpro.com</p>
                     </div>
                 </div>
             </div>

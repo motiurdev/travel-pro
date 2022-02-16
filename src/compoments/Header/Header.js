@@ -38,6 +38,7 @@ const Header = () => {
                             {
                                 user?.email ? <button className="login-btn my-2" onClick={logOut}>Logout <i className="fas fa-sign-out-alt"></i></button> : <NavLink to="/login">Login</NavLink>
                             }
+                            <NavLink to="/contact">Contact</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -17,5 +17,8 @@
 }
 
 .login-container {
-    background: linear-gradient(to bottom, rgba(0, 149, 218, 0.658), rgba(0, 41, 70, 0.781));
+    background: linear-gradient(to bottom, rgba(0, 149, 218, 0.658), rgba(0, 41, 70, 0.781)),url("../../images/loinImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

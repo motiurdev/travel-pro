@@ -12,6 +12,7 @@ import AllBooking from './compoments/AllBooking/AllBooking';
 import AddBooking from './compoments/AddBooking/AddBooking';
 import Footer from './compoments/Footer/Footer';
 import About from './compoments/Home/About/About';
+import Contact from './compoments/Contact/Contact';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

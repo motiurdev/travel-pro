@@ -67,7 +67,7 @@ const ImageGallery = () => {
 
 
     return (
-        <div className="py-5">
+        <div className="py-5 mt-4">
             <div className='container'>
                 <h1 className="header-title places-effect mb-5">Photo Gallery</h1>
                 <div>

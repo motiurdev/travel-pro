@@ -22,6 +22,7 @@ const useFirebase = () => {
         setIsLoading(true)
         signOut(auth).then(() => {
             setUser({})
+            alert("Do you want to logout")
         }).catch((error) => {
             // An error happened.
         })

@@ -3,6 +3,10 @@
     color: #fff;
 }
 
+.social-icon a {
+    text-decoration: none;
+}
+
 .social-icon i {
     background: #014152;
     cursor: pointer;
